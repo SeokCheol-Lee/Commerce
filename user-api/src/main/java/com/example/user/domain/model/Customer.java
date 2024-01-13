@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.time.LocalDate;
 import java.util.Locale;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -16,12 +17,10 @@ import lombok.Setter;
 import org.hibernate.envers.AuditOverride;
 
 @Entity
-@Setter
 @Getter
 @Builder
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-@AuditOverride(forClass = BaseEntity.class)
 public class Customer extends BaseEntity {
 
     @Id
