@@ -2,6 +2,20 @@
 
 #### 오류 내용
 
+'java.lang.ClassNotFoundException: javax.xml.bind.JAXBException'
+
+#### 해결 방안
+Jwt를 사용하면서 발생한 문제로,
+gradle에 아래와 같은 dependency를 추가하여 해결 하였음
+
+```
+implementation 'javax.xml.bind:jaxb-api:2.3.0'
+```
+
+***
+
+#### 오류 내용
+
 'OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended'
 
 #### 해결 방안

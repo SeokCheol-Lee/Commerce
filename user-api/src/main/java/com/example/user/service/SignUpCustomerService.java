@@ -2,7 +2,7 @@ package com.example.user.service;
 
 import com.example.user.domain.SignUpForm;
 import com.example.user.domain.model.Customer;
-import com.example.user.repository.CustomerRepository;
+import com.example.user.domain.repository.CustomerRepository;
 import java.util.Locale;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

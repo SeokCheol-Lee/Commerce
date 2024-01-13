@@ -1,4 +1,4 @@
-package com.example.user.repository;
+package com.example.user.domain.repository;
 
 import com.example.user.domain.model.Customer;
 import java.util.Optional;

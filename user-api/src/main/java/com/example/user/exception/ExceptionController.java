@@ -1,5 +1,6 @@
 package com.example.user.exception;
 
+import jakarta.servlet.ServletException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
