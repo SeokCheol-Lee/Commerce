@@ -7,6 +7,7 @@ import static org.mockito.BDDMockito.given;
 import com.example.user.domain.SignUpForm;
 import com.example.user.domain.model.Customer;
 import com.example.user.domain.repository.CustomerRepository;
+import com.example.user.service.customer.SignUpCustomerService;
 import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

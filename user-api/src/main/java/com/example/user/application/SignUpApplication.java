@@ -2,9 +2,12 @@ package com.example.user.application;
 
 import com.example.user.domain.SignUpForm;
 import com.example.user.domain.model.Customer;
+import com.example.user.domain.model.Seller;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
-import com.example.user.service.SignUpCustomerService;
+import com.example.user.service.customer.SignUpCustomerService;
+import com.example.user.service.seller.SellerService;
+import com.example.user.service.seller.SignUpSellerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +16,7 @@ import org.springframework.stereotype.Service;
 public class SignUpApplication {
 
     private final SignUpCustomerService signUpCustomerService;
+    private final SignUpSellerService signUpSellerService;
 
     public String customerSignup(SignUpForm form){
         if(signUpCustomerService.isEmailExist(form.getEmail())){
@@ -21,6 +25,15 @@ public class SignUpApplication {
             Customer c = signUpCustomerService.signUp(form);
 
             return "회원가입 성공";
+        }
+    }
+
+    public String sellerSignUp(SignUpForm form){
+        if(signUpSellerService.isEmailExist(form.getEmail())){
+            throw new CustomException(ErrorCode.ALREADY_REGISTER_USER);
+        }else{
+            Seller s = signUpSellerService.signUp(form);
+            return "회워가입 성공";
         }
     }
 }

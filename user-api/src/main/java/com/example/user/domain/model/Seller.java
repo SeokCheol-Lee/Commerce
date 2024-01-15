@@ -8,20 +8,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.time.LocalDate;
 import java.util.Locale;
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.hibernate.envers.AuditOverride;
 
 @Entity
 @Getter
 @Builder
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 @AllArgsConstructor
-public class Customer extends BaseEntity {
+@AuditOverride(forClass = BaseEntity.class)
+public class Seller extends BaseEntity{
 
     @Id
     @Column(name = "id", nullable = false)
@@ -34,8 +33,8 @@ public class Customer extends BaseEntity {
     private String phone;
     private LocalDate birth;
 
-    public static Customer from(SignUpForm form){
-        return Customer.builder()
+    public static Seller from(SignUpForm form){
+        return Seller.builder()
             .email(form.getEmail().toLowerCase(Locale.ROOT))
             .name(form.getName())
             .password(form.getPassword())
@@ -43,4 +42,6 @@ public class Customer extends BaseEntity {
             .phone(form.getPhone())
             .build();
     }
+
+
 }

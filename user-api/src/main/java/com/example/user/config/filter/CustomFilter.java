@@ -2,7 +2,7 @@ package com.example.user.config.filter;
 
 import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.domain.domain.common.UserVo;
-import com.example.user.service.CustomerService;
+import com.example.user.service.customer.CustomerService;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
