@@ -14,10 +14,10 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.envers.AuditOverride;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
@@ -33,6 +33,7 @@ public class Customer extends BaseEntity {
     private String password;
     private String phone;
     private LocalDate birth;
+    private Integer balance;
 
     public static Customer from(SignUpForm form){
         return Customer.builder()
