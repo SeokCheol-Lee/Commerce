@@ -1,7 +1,7 @@
 package com.example.user.service.seller;
 
 import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.Seller;
+import com.example.user.domain.model.seller.Seller;
 import com.example.user.domain.repository.SellerRepository;
 import java.util.Locale;
 import lombok.RequiredArgsConstructor;

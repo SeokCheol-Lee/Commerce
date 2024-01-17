@@ -1,12 +1,11 @@
 package com.example.user.application;
 
 import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.Customer;
-import com.example.user.domain.model.Seller;
+import com.example.user.domain.model.customer.Customer;
+import com.example.user.domain.model.seller.Seller;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import com.example.user.service.customer.SignUpCustomerService;
-import com.example.user.service.seller.SellerService;
 import com.example.user.service.seller.SignUpSellerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -4,7 +4,7 @@ import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.domain.domain.common.UserVo;
 import com.example.user.domain.ChangeBalanceForm;
 import com.example.user.domain.customer.CustomerDto;
-import com.example.user.domain.model.Customer;
+import com.example.user.domain.model.customer.Customer;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import com.example.user.service.customer.CustomerBalanceService;

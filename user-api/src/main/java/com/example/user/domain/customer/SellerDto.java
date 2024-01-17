@@ -1,6 +1,6 @@
 package com.example.user.domain.customer;
 
-import com.example.user.domain.model.Seller;
+import com.example.user.domain.model.seller.Seller;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

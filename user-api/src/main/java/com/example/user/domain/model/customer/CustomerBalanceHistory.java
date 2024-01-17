@@ -1,5 +1,6 @@
-package com.example.user.domain.model;
+package com.example.user.domain.model.customer;
 
+import com.example.user.domain.model.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -18,7 +19,7 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerBalanceHistory extends BaseEntity{
+public class CustomerBalanceHistory extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

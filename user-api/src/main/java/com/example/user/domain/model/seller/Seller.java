@@ -1,6 +1,7 @@
-package com.example.user.domain.model;
+package com.example.user.domain.model.seller;
 
 import com.example.user.domain.SignUpForm;
+import com.example.user.domain.model.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,9 +13,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.envers.AuditOverride;
 
 @Entity
+@Setter
 @Getter
 @Builder
 @NoArgsConstructor
@@ -32,6 +35,7 @@ public class Seller extends BaseEntity{
     private String password;
     private String phone;
     private LocalDate birth;
+    private Integer balance;
 
     public static Seller from(SignUpForm form){
         return Seller.builder()

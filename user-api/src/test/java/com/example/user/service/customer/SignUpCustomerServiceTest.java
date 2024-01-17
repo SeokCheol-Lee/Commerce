@@ -1,13 +1,12 @@
-package com.example.user.service;
+package com.example.user.service.customer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 
 import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.Customer;
+import com.example.user.domain.model.customer.Customer;
 import com.example.user.domain.repository.CustomerRepository;
-import com.example.user.service.customer.SignUpCustomerService;
 import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -37,10 +36,10 @@ class SignUpCustomerServiceTest {
         given(customerRepository.save(any()))
             .willReturn(customer);
         //when
-        signUpCustomerService.signUp(signUpForm);
+        Customer c = signUpCustomerService.signUp(signUpForm);
         //then
-        assertEquals(signUpForm.getName(), customer.getName());
-        assertEquals(signUpForm.getPassword(), customer.getPassword());
-        assertEquals(signUpForm.getEmail(), customer.getEmail());
+        assertEquals(signUpForm.getName(), c.getName());
+        assertEquals(signUpForm.getPassword(), c.getPassword());
+        assertEquals(signUpForm.getEmail(), c.getEmail());
     }
 }
