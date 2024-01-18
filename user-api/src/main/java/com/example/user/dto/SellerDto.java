@@ -1,6 +1,6 @@
-package com.example.user.domain.customer;
+package com.example.user.dto;
 
-import com.example.user.domain.model.seller.Seller;
+import com.example.domain.domain.model.seller.Seller;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

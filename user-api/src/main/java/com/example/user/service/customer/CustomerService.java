@@ -1,7 +1,7 @@
 package com.example.user.service.customer;
 
-import com.example.user.domain.model.customer.Customer;
-import com.example.user.domain.repository.CustomerRepository;
+import com.example.domain.domain.model.customer.Customer;
+import com.example.domain.domain.repository.CustomerRepository;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

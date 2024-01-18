@@ -1,0 +1,12 @@
+package com.example.user.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@Configuration
+@EnableJpaAuditing
+@EnableJpaRepositories(basePackages = {"com.example.domain"})
+public class JpaAuditingConfiguration {
+
+}

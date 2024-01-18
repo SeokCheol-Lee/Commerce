@@ -2,9 +2,9 @@ package com.example.user.controller;
 
 import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.domain.domain.common.UserVo;
-import com.example.user.domain.ChangeBalanceForm;
-import com.example.user.domain.customer.SellerDto;
-import com.example.user.domain.model.seller.Seller;
+import com.example.user.dto.ChangeBalanceForm;
+import com.example.user.dto.SellerDto;
+import com.example.domain.domain.model.seller.Seller;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import com.example.user.service.seller.SellerBalanceService;

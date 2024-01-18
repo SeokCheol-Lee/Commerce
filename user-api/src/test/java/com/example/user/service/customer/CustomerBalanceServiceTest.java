@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.example.user.domain.ChangeBalanceForm;
-import com.example.user.domain.model.customer.Customer;
-import com.example.user.domain.model.customer.CustomerBalanceHistory;
-import com.example.user.domain.repository.CustomerBalanceHistoryRepository;
-import com.example.user.domain.repository.CustomerRepository;
+import com.example.user.dto.ChangeBalanceForm;
+import com.example.domain.domain.model.customer.Customer;
+import com.example.domain.domain.model.customer.CustomerBalanceHistory;
+import com.example.domain.domain.repository.CustomerBalanceHistoryRepository;
+import com.example.domain.domain.repository.CustomerRepository;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import java.util.Optional;

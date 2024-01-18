@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 
-import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.seller.Seller;
-import com.example.user.domain.repository.SellerRepository;
+import com.example.domain.domain.dto.SignUpForm;
+import com.example.domain.domain.model.seller.Seller;
+import com.example.domain.domain.repository.SellerRepository;
 import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

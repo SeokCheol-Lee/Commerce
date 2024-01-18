@@ -2,9 +2,9 @@ package com.example.user.application;
 
 import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.domain.domain.common.UserType;
-import com.example.user.domain.SignInForm;
-import com.example.user.domain.model.customer.Customer;
-import com.example.user.domain.model.seller.Seller;
+import com.example.user.dto.SignInForm;
+import com.example.domain.domain.model.customer.Customer;
+import com.example.domain.domain.model.seller.Seller;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import com.example.user.service.customer.CustomerService;

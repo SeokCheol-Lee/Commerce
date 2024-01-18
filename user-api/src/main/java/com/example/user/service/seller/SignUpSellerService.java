@@ -1,8 +1,8 @@
 package com.example.user.service.seller;
 
-import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.seller.Seller;
-import com.example.user.domain.repository.SellerRepository;
+import com.example.domain.domain.dto.SignUpForm;
+import com.example.domain.domain.model.seller.Seller;
+import com.example.domain.domain.repository.SellerRepository;
 import java.util.Locale;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

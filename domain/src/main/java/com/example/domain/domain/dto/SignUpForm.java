@@ -1,4 +1,4 @@
-package com.example.user.domain;
+package com.example.domain.domain.dto;
 
 import java.time.LocalDate;
 import lombok.AllArgsConstructor;

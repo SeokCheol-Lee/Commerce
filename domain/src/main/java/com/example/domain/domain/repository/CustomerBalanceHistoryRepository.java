@@ -1,6 +1,6 @@
-package com.example.user.domain.repository;
+package com.example.domain.domain.repository;
 
-import com.example.user.domain.model.customer.CustomerBalanceHistory;
+import com.example.domain.domain.model.customer.CustomerBalanceHistory;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.RequestParam;

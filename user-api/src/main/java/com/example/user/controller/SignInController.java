@@ -1,7 +1,7 @@
 package com.example.user.controller;
 
 import com.example.user.application.SignInApplication;
-import com.example.user.domain.SignInForm;
+import com.example.user.dto.SignInForm;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

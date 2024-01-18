@@ -16,7 +16,7 @@
 - [x] 인증
 - [x] 로그인 토큰 발행
 - [x] 로그인 토큰을 통한 제어 확인(JWT, Filter를 사용해서 간략하게)
-- [ ] 예치금 관리
+- [x] 예치금 관리
 
 ### 셀러
 - [ ] 상품 CRUD ( Create, Read, Update, Delete)

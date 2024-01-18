@@ -1,9 +1,9 @@
 package com.example.user.service.seller;
 
-import com.example.user.domain.ChangeBalanceForm;
-import com.example.user.domain.model.seller.SellerBalanceHistory;
-import com.example.user.domain.repository.SellerBalanceHistoryRepository;
-import com.example.user.domain.repository.SellerRepository;
+import com.example.user.dto.ChangeBalanceForm;
+import com.example.domain.domain.model.seller.SellerBalanceHistory;
+import com.example.domain.domain.repository.SellerBalanceHistoryRepository;
+import com.example.domain.domain.repository.SellerRepository;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import lombok.RequiredArgsConstructor;

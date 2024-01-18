@@ -1,7 +1,7 @@
-package com.example.user.domain.model.customer;
+package com.example.domain.domain.model.customer;
 
-import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.BaseEntity;
+import com.example.domain.domain.dto.SignUpForm;
+import com.example.domain.domain.model.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

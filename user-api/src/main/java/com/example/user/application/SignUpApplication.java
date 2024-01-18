@@ -1,8 +1,8 @@
 package com.example.user.application;
 
-import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.customer.Customer;
-import com.example.user.domain.model.seller.Seller;
+import com.example.domain.domain.dto.SignUpForm;
+import com.example.domain.domain.model.customer.Customer;
+import com.example.domain.domain.model.seller.Seller;
 import com.example.user.exception.CustomException;
 import com.example.user.exception.ErrorCode;
 import com.example.user.service.customer.SignUpCustomerService;
