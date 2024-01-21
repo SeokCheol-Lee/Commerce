@@ -1,4 +1,4 @@
-package com.example.user.exception;
+package com.example.order.exception;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
