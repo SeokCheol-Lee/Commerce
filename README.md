@@ -19,7 +19,7 @@
 - [x] 예치금 관리
 
 ### 셀러
-- [ ] 상품 CRUD ( Create, Read, Update, Delete)
+- [x] 상품 CRUD ( Create, Read, Update, Delete)
 - [ ] 판매 내역 조회
 - [ ] 정산
 
