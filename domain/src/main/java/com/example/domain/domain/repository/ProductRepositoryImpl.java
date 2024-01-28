@@ -9,17 +9,18 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class ProductRepositoryImpl implements ProductRepositoryCustom{
+public class ProductRepositoryImpl implements ProductRepositoryCustom {
 
     private final JPAQueryFactory queryFactory;
-
 
     @Override
     public List<Product> searchByName(String name) {
         String search = "%"+name+"%";
 
+        //search의 이름과 같은 product의 name을 조회
         QProduct product = QProduct.product;
         return queryFactory.selectFrom(product)
-            .where(product.name.like(search)).fetch();
+            .where(product.name.like(search))
+            .fetch();
     }
 }

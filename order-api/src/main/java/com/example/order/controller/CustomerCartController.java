@@ -4,9 +4,9 @@ import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.domain.domain.dto.AddProductCartForm;
 import com.example.domain.domain.redis.Cart;
 import com.example.order.application.CartApplication;
-import com.example.order.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -26,5 +26,10 @@ public class CustomerCartController {
         @RequestHeader(name = "X-AUTH-TOKEN") String token,
         @RequestBody AddProductCartForm form){
         return ResponseEntity.ok(cartApplication.addCart(provider.getUserVo(token).getId(),form));
+    }
+
+    @GetMapping
+    public ResponseEntity<Cart> showCart(@RequestHeader(name = "X-AUTH-TOKEN") String token){
+        return ResponseEntity.ok(cartApplication.getCart(provider.getUserVo(token).getId()));
     }
 }

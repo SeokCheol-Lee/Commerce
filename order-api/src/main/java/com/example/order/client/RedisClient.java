@@ -1,4 +1,4 @@
-package com.example.domain.client;
+package com.example.order.client;
 
 import com.example.domain.domain.redis.Cart;
 import com.fasterxml.jackson.core.JsonProcessingException;
