@@ -2,5 +2,9 @@ spring:
   profiles:
     include:
       - domain
+feign:
+  client:
+    url:
+      user-api: localhost:8081
 server:
   port: 8082

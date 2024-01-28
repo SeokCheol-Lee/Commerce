@@ -33,7 +33,7 @@
 - [x] 장바구니에 물건 추가
 - [x] 장바구니 확인
 - [x] 장바구니 변경
-- [ ] 주문하기
+- [x] 주문하기
 
 ## Trouble Shooting
 [go to the trouble shooting section](doc/TroubleShooting.md)
