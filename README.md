@@ -9,7 +9,7 @@
 
 ## 회원 서버
 ### 공통
-- [x] 이메일을 통해서 인증번호를 통한 회원가입
+- [x] 회원가입
 
 ### 고객
 - [x] 회원 가입
@@ -37,6 +37,12 @@
 
 ## Trouble Shooting
 [go to the trouble shooting section](doc/TroubleShooting.md)
+
+## 시스템 구성
+![SCD](doc/img/SCD.png)
+
+## ERD
+![ERD](doc/img/ERD.png)
 
 
 ### Tech Stack

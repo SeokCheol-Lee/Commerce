@@ -3,7 +3,6 @@ package com.example.order.controller;
 import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.domain.domain.dto.AddProductForm;
 import com.example.domain.domain.dto.AddProductItemForm;
-import com.example.domain.domain.model.product.ProductItem;
 import com.example.order.dto.ProductDto;
 import com.example.order.dto.ProductItemDto;
 import com.example.order.dto.UpdateProductForm;

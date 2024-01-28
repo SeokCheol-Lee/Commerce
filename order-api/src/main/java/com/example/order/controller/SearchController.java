@@ -1,6 +1,5 @@
 package com.example.order.controller;
 
-import com.example.domain.config.JwtAuthenticationiProvider;
 import com.example.order.dto.ProductDto;
 import com.example.order.service.ProductSearchService;
 import java.util.List;
